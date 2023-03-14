@@ -24,3 +24,5 @@ payload：
 
 key=SecretKey012345678901234567890123456789012345678901234567890123456789
 据此构造json web token 添加到请求头   即可绕过登录认证
+
+![image](https://user-images.githubusercontent.com/55875284/224986445-1d78e6c9-ae8b-4f3f-9b73-0e1e82babd86.png)
