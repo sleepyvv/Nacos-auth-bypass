@@ -2,13 +2,11 @@
 
 Nacos 身份认证绕过
 
-原理:
-JWT SECRET.KEY硬编码
-
 由补丁可知：
 nacos.core.auth.plugin.nacos.token.secret.key=SecretKey012345678901234567890123456789012345678901234567890123456789
 
 JWT构成：base64编码的header.base64编码的payload+hmac(f(header,payload,key))
+参考https://blog.csdn.net/weixin_45839321/article/details/108935762
 
 由于key硬编码，因此可以根据header+payload构造hmac  通过签名认证
 header：
